@@ -20,7 +20,7 @@ export async function getServerSideProps(context: NextPageContext){
     }
 }
 
-const profiles = () => {
+const Profiles = () => {
 
     const {data:user} = useCurrentUser();
     const router = useRouter();
@@ -49,7 +49,8 @@ const profiles = () => {
                                     <img src = '/images/default-blue.png' alt='profile'/>
                             </div>
 
-                            <div className="
+                            <div 
+                            className="
                              mt-4
                              text-gray-400
                              text-2xl
@@ -66,4 +67,4 @@ const profiles = () => {
     )
 }
 
-export default profiles;
+export default Profiles;
